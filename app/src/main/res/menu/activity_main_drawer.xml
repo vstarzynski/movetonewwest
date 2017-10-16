@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/education"
+            android:icon="@drawable/education_icon"
+            android:title="Education" />
+
+        <item
+            android:id="@+id/transport"
+            android:icon="@drawable/transport_icon"
+            android:title="Transport" />
+
+        <item
+            android:id="@+id/parks"
+            android:icon="@drawable/parks_icon"
+            android:title="Parks" />
+
+        <item
+            android:id="@+id/sports"
+            android:icon="@drawable/sports_icon"
+            android:title="Sports" />
+
+        <item
+            android:id="@+id/bike_routes"
+            android:icon="@drawable/bike_icon"
+            android:title="Bike Routes" />
+
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/events_icon"
+            android:title="Events" />
+
+    </group>
+</menu>
