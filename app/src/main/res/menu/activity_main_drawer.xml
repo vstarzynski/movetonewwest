@@ -32,5 +32,10 @@
             android:icon="@drawable/events_icon"
             android:title="Events" />
 
+        <item
+            android:id="@+id/favourites"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Favourites" />
+
     </group>
 </menu>

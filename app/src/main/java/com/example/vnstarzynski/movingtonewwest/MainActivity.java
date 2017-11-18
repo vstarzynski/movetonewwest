@@ -99,6 +99,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.events) {
             Intent educationIntent = new Intent(this, EventsActivity.class);
             startActivity(educationIntent);
+        } else if (id == R.id.favourites) {
+            Intent favouriteIntent = new Intent(this, FavouriteActivity.class);
+            startActivity(favouriteIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vnstarzynski.movingtonewwest.EducationDetailActivity"
+    android:background="#87ceeb">
+
+
+    <TextView
+        android:id="@+id/educationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/descriptionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@+id/educationName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/descriptionHeader"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/descriptionHeader"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/categoryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/category"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/categoryHeader"
+        android:layout_toEndOf="@+id/categoryHeader"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/hoursHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/category"
+        android:text="@string/hours" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/hoursHeader"
+        android:layout_toEndOf="@+id/hoursHeader"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/locationHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/hours"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/locationHeader"
+        android:layout_toEndOf="@+id/locationHeader"
+        android:layout_marginStart="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/pcHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postalCode"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/location"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/postalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pcHeader"
+        android:layout_toEndOf="@+id/pcHeader"
+        android:layout_marginStart="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/phoneHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/postalCode"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/phoneHeader"
+        android:layout_toEndOf="@+id/phoneHeader"
+        android:layout_marginStart="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/emailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emailHeader"
+        android:layout_toEndOf="@+id/emailHeader"
+        android:autoLink="email"
+        android:layout_marginStart="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/websiteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/websiteHeader"
+        android:layout_toEndOf="@+id/websiteHeader"
+        android:layout_marginStart="10dp"
+        android:autoLink="web"
+        android:text="" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/btn_star"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp" />
+
+</RelativeLayout>

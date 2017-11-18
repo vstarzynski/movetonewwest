@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87ceeb"
-    tools:context="com.example.vnstarzynski.movingtonewwest.EducationActivity"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:context="com.example.vnstarzynski.movingtonewwest.FavouriteActivity"
+    android:background="#87ceeb" >
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/education_list"/>
-
+        android:id="@+id/favourite_list"/>
 </LinearLayout>

@@ -1,0 +1,290 @@
+[
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Family Services of Greater Vancouver",
+		"Description" : "Provides various programs related to literacy and education (including financial literacy courses, ESL practice groups) etc. . Locations for courses and programs vary - please visit website for more details.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "301 - 321 Sixth Street",
+		"PC" : "V3L 3A7",
+		"Phone" : "(604)525-9144",
+		"Email" : "",
+		"Website" : "http://www.fsgv.ca/find-the-support-you-need/courses/",
+		"X" : "-122.91524300931644",
+		"Y" : "49.20945714598408",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.91524300931644, 49.20945714598408 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "I-Care Literacy Program (Douglas College)",
+		"Description" : "Adults can meet with a trained volunteer tutor once a week to learn basic reading, writing and spelling.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "700 Royal Avenue",
+		"PC" : "V3M 5Z5",
+		"Phone" : "(604)527-5409",
+		"Email" : "walkern@douglascollege.ca",
+		"Website" : "http://www.douglascollege.ca/programs-courses/faculties/language-literature-performing-arts/icare-literacy-program",
+		"X" : "-122.91274781516022",
+		"Y" : "49.20350201411526",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.91274781516022, 49.20350201411526 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Immigrant Services Society of BC",
+		"Description" : "Provides language learning services through LINC  (Language Instruction for Newcomers to Canada) program.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "280 - 610 Sixth Street",
+		"PC" : "V3L 3C2",
+		"Phone" : "(604)522-5902",
+		"Email" : "linc.nwest@issbc.org",
+		"Website" : "http://issbc.org/prim-nav/find-a-service-or-course/learn-english/learnenglish",
+		"X" : "-122.92252572535635",
+		"Y" : "49.212490006536555",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.92252572535635, 49.212490006536555 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Inclusion BC - On My Way Program",
+		"Description" : "A project to help students with special needs and their families prepare for life after high school.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "227 Sixth Street",
+		"PC" : "V3L 3A5",
+		"Phone" : "(604)777-9100",
+		"Email" : "info@inclusionbc.org",
+		"Website" : "http://transitionplanningbc.ca/",
+		"X" : "-122.91375364044025",
+		"Y" : "49.20825385976762",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.91375364044025, 49.20825385976762 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster Public Library - Main Branch",
+		"Description" : "Offers electronic and written resources (books, videos etc), learning related events and programs for children, teens and adults. Also has ESL conversation circles.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "Monday-Thursday, 9:30 am - 9 pm, Friday & Saturday, 9:30 am - 6 pm, Sunday, 12 pm- 5 pm",
+		"Location" : "716 Sixth Avenue",
+		"PC" : "V3M 2B3",
+		"Phone" : "(604)527-4660",
+		"Email" : "askus@nwpl.ca",
+		"Website" : "http://www.nwpl.ca/",
+		"X" : "-122.92238139169123",
+		"Y" : "49.2116721626214",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.92238139169123, 49.2116721626214 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster Public Library - Queensborough Branch",
+		"Description" : "Offers electronic and written resources (books, videos etc), learning related events and programs for children, teens and adults. Also has ESL conversation circles.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "Monday & Saturday, 10 am - 2 pm, Tuesday & Thursday, 12 pm - 8 pm, Wednesday and Friday, 10 am - 6 pm",
+		"Location" : "920 Ewen Avenue",
+		"PC" : "V3M 5C8",
+		"Phone" : "(604)636-4450",
+		"Email" : "askus@nwpl.ca",
+		"Website" : "http://www.nwpl.ca/",
+		"X" : "-122.9436168718548",
+		"Y" : "49.18588392554472",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.9436168718548, 49.18588392554472 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - Adult Learning Centre (Downtown)",
+		"Description" : "Provides community education courses, including high school upgrade courses. Language learning centre provides English language learning courses.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "1001 Columbia Street",
+		"PC" : "V3M 1C4",
+		"Phone" : "(604)517-6191",
+		"Email" : "",
+		"Website" : "http://www.ce40.ca/",
+		"X" : "-122.9163643334876",
+		"Y" : "49.20047229052344",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.9163643334876, 49.20047229052344 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - Adult Learning Centre and Language Learning Centre (Pearson)",
+		"Description" : "Provides community education courses, including high school upgrade courses. Language learning centre provides English language learning courses.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "835 Eighth Street",
+		"PC" : "V3M 3S9",
+		"Phone" : "(604)517-6286",
+		"Email" : "",
+		"Website" : "http://www.ce40.ca/",
+		"X" : "-122.92842855180281",
+		"Y" : "49.215961952125525",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.92842855180281, 49.215961952125525 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - General (School Board office)",
+		"Description" : "Provides public education for elementary, middle, and secondary school students at various schools throughout New Westminster.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "2/F - 1001 Columbia Street",
+		"PC" : "V3M 1C4",
+		"Phone" : "(604)517-6240",
+		"Email" : "",
+		"Website" : "http://district.sd40.bc.ca/",
+		"X" : "-122.9163643334876",
+		"Y" : "49.20047229052344",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.9163643334876, 49.20047229052344 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - Power Program",
+		"Description" : "High school completion program for ages 16-18 years old.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "1001 Columbia Street",
+		"PC" : "V3M 1C4",
+		"Phone" : "(604)517-6159",
+		"Email" : "",
+		"Website" : "http://district.sd40.bc.ca/power/about",
+		"X" : "-122.9163643334876",
+		"Y" : "49.20047229052344",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.9163643334876, 49.20047229052344 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - SIGMA Youth Adult Learning Centre",
+		"Description" : "Offers flexible high school completion program for students ages 16-18 years old.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "835 Eighth Street",
+		"PC" : "V3M 3S9",
+		"Phone" : "(604)517-6292",
+		"Email" : "sigma@sd40.bc.ca",
+		"Website" : "http://district.sd40.bc.ca/programs-services/sigma",
+		"X" : "-122.92842855180281",
+		"Y" : "49.215961952125525",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.92842855180281, 49.215961952125525 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "New Westminster School District - Urban First Nations Learning Support Centre",
+		"Description" : "Offers courses and services (including grade 12 diploma - Adult Dogwood) for Aboriginal People.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "Monday to Thursday, 11:30 am - 2:30 pm (September to June)",
+		"Location" : "1001 Columbia Street",
+		"PC" : "V3M 1C4",
+		"Phone" : "(604)517-6191",
+		"Email" : "",
+		"Website" : "http://district.sd40.bc.ca/programs-services/urban-first-nations-learning-support-centre",
+		"X" : "-122.9163643334876",
+		"Y" : "49.20047229052344",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.9163643334876, 49.20047229052344 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Purpose Society - English Made Easy Program",
+		"Description" : "Provides an opportunity for parents, grandparents and children (up to six years of age) to learn English, make friends, enjoy great food and learn about other cultures.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "Wednesday, 10 am - 12 pm",
+		"Location" : "40 Begbie Street",
+		"PC" : "V3M 3L9",
+		"Phone" : "(604)526-2522",
+		"Email" : "",
+		"Website" : "http://www.purposesociety.org/Parenting_Groups.html",
+		"X" : "-122.91125685863508",
+		"Y" : "49.20210369037047",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.91125685863508, 49.20210369037047 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Purpose Society - Purpose Secondary School",
+		"Description" : "High school graduation program for grades 9 to 12.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "40 Begbie Street",
+		"PC" : "V3M 3L9",
+		"Phone" : "(604)528-6014 (September-June phone), (604)526-2522 (July/August phone)",
+		"Email" : "purpose_school@telus.net",
+		"Website" : "http://www.purposesecondary.org/WELCOME.html",
+		"X" : "-122.91125685863508",
+		"Y" : "49.20210369037047",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.91125685863508, 49.20210369037047 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "UFCW - 247 Training and Education Centre",
+		"Description" : "Offers various career related and skills courses.",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "544 Columbia Street",
+		"PC" : "V3L 1B1",
+		"Phone" : "(604)523-5421",
+		"Email" : "webCampusadmin@ufcw.ca",
+		"Website" : "http://www.ufcw247trainingcentre.com/",
+		"X" : "-122.90713562068132",
+		"Y" : "49.20325524464897",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.90713562068132, 49.20325524464897 ]
+		}
+	},
+	{
+		"json_featuretype" : "EDUCATION_LANGUAGE_AND_LITERACY",
+		"Name" : "Union Gospel Mission",
+		"Description" : "Provides monthly lifeskills programming and workshops. ",
+		"Category" : "Education, Language and Literacy",
+		"Hours" : "",
+		"Location" : "658 Clarkson Street",
+		"PC" : "V3M 1E1",
+		"Phone" : "(604)525-8989",
+		"Email" : "contact@ugm.ca ",
+		"Website" : "https://www.ugm.ca/program-meal-times/",
+		"X" : "-122.90934416053088",
+		"Y" : "49.202799308421426",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -122.90934416053088, 49.202799308421426 ]
+		}
+	}
+]

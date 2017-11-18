@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -37,6 +38,8 @@
         <activity
             android:name=".EventsActivity"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".EducationDetailActivity" />
+        <activity android:name=".FavouriteActivity"></activity>
     </application>
 
 </manifest>
