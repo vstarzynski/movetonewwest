@@ -1,11 +1,13 @@
 package com.example.vnstarzynski.movingtonewwest;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -72,6 +74,16 @@ public class EducationDetailActivity extends AppCompatActivity {
             website.setText(education.getWebsite());
             website.setMovementMethod(LinkMovementMethod.getInstance());
         }
+
+        Button mapBtn = (Button) findViewById(R.id.map);
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(EducationDetailActivity.this, MapsActivity.class);
+                i.putExtra("education", education);
+                startActivity(i);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.favourite);
         fab.setOnClickListener(new View.OnClickListener() {
