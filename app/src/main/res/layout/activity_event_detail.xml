@@ -4,194 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vnstarzynski.movingtonewwest.EducationDetailActivity"
+    tools:context="com.example.vnstarzynski.movingtonewwest.EventDetailActivity"
     android:background="#87ceeb">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
             <TextView
-                android:id="@+id/educationName"
+                android:id="@+id/eventName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:textStyle="bold"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/descriptionHeader"
+                android:id="@+id/descriptionHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/description"
-                android:layout_below="@+id/educationName"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="13dp" />
+                android:layout_below="@+id/eventName"
+                android:layout_marginTop="13dp"
+                android:text="@string/description" />
 
             <TextView
-                android:id="@+id/description"
+                android:id="@+id/description_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/descriptionHeader"
+                android:layout_alignTop="@+id/descriptionHeader_event"
                 android:layout_marginStart="10dp"
-                android:layout_toEndOf="@+id/descriptionHeader"
+                android:layout_toEndOf="@+id/descriptionHeader_event"
                 android:text="" />
 
             <TextView
-                android:id="@+id/categoryHeader"
+                android:id="@+id/addressHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/category"
-                android:layout_below="@+id/description"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:id="@+id/category"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_alignTop="@+id/categoryHeader"
-                android:layout_toEndOf="@+id/categoryHeader"
-                android:text="" />
-
-            <TextView
-                android:id="@+id/hoursHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/category"
-                android:text="@string/hours" />
+                android:layout_below="@+id/description_event"
+                android:layout_marginTop="5dp"
+                android:text="@string/location" />
 
             <TextView
-                android:id="@+id/hours"
+                android:id="@+id/address_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/addressHeader_event"
                 android:layout_marginStart="10dp"
-                android:layout_alignTop="@+id/hoursHeader"
-                android:layout_toEndOf="@+id/hoursHeader"
+                android:layout_toEndOf="@+id/addressHeader_event"
                 android:text="" />
 
             <TextView
-                android:id="@+id/locationHeader"
+                android:id="@+id/postalCodeHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/location"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/address_event"
                 android:layout_marginTop="5dp"
-                android:layout_below="@+id/hours"
-                android:layout_alignParentStart="true" />
+                android:text="@string/postalCode" />
 
             <TextView
-                android:id="@+id/location"
+                android:id="@+id/postalCode_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/locationHeader"
-                android:layout_toEndOf="@+id/locationHeader"
+                android:layout_alignTop="@+id/postalCodeHeader_event"
                 android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/postalCodeHeader_event"
                 android:text="" />
 
             <TextView
-                android:id="@+id/pcHeader"
+                android:id="@+id/phoneHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/postalCode"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/postalCode_event"
                 android:layout_marginTop="5dp"
-                android:layout_below="@+id/location"
-                android:layout_alignParentStart="true" />
+                android:text="@string/phone" />
 
             <TextView
-                android:id="@+id/postalCode"
+                android:id="@+id/phone_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/pcHeader"
-                android:layout_toEndOf="@+id/pcHeader"
+                android:layout_alignTop="@+id/phoneHeader_event"
                 android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/phoneHeader_event"
                 android:text="" />
 
             <TextView
-                android:id="@+id/phoneHeader"
+                android:id="@+id/emailHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/phone"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/phone_event"
                 android:layout_marginTop="5dp"
-                android:layout_below="@+id/postalCode"
-                android:layout_alignParentStart="true" />
+                android:text="@string/email" />
 
             <TextView
-                android:id="@+id/phone"
+                android:id="@+id/email_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/phoneHeader"
-                android:layout_toEndOf="@+id/phoneHeader"
+                android:layout_alignTop="@+id/emailHeader_event"
                 android:layout_marginStart="10dp"
-                android:text="" />
-
-            <TextView
-                android:id="@+id/emailHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/email"
-                android:layout_marginTop="5dp"
-                android:layout_below="@+id/phone"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/emailHeader"
-                android:layout_toEndOf="@+id/emailHeader"
+                android:layout_toEndOf="@+id/emailHeader_event"
                 android:autoLink="email"
-                android:layout_marginStart="10dp"
                 android:text="" />
 
             <TextView
-                android:id="@+id/websiteHeader"
+                android:id="@+id/websiteHeader_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/website"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/email_event"
                 android:layout_marginTop="5dp"
-                android:layout_below="@+id/email"
-                android:layout_alignParentStart="true" />
+                android:text="@string/phone" />
 
             <TextView
-                android:id="@+id/website"
+                android:id="@+id/website_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/websiteHeader"
-                android:layout_toEndOf="@+id/websiteHeader"
+                android:layout_alignTop="@+id/websiteHeader_event"
                 android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/websiteHeader_event"
                 android:autoLink="web"
                 android:text="" />
 
+            <TextView
+                android:id="@+id/summaryHeader_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/website_event"
+                android:layout_marginTop="5dp"
+                android:text="@string/summary" />
+
+            <TextView
+                android:id="@+id/summary_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/summaryHeader_event"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/summaryHeader_event"
+                android:text="" />
+
             <Button
-                android:id="@+id/map"
+                android:id="@+id/map_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/title_activity_maps"
-                android:layout_above="@+id/favourite"
+                android:layout_above="@+id/favourite_event"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="50dp" />
         </LinearLayout>
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/favourite"
+        android:id="@+id/favourite_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        app:srcCompat="@android:drawable/btn_star"
-        android:layout_marginLeft="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_marginBottom="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="35dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/btn_star" />
 
 </RelativeLayout>

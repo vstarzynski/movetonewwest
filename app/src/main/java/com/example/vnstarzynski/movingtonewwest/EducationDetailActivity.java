@@ -80,7 +80,9 @@ public class EducationDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(EducationDetailActivity.this, MapsActivity.class);
-                i.putExtra("education", education);
+                i.putExtra("longitude", education.getLongitude());
+                i.putExtra("latitude", education.getLatitude());
+                i.putExtra("name", education.getName());
                 startActivity(i);
             }
         });

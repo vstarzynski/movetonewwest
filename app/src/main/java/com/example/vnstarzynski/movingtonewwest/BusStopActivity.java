@@ -1,7 +1,6 @@
 package com.example.vnstarzynski.movingtonewwest;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -18,47 +17,43 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class EducationActivity extends AppCompatActivity implements Serializable {
-    private List<Education> educationList;
-    private List<String> name;
+public class BusStopActivity extends AppCompatActivity {
+    private List<BusStop> stopList;
+    private List<String> stopNumber;
     private ProgressDialog pDialog;
-    private String service_url = "http://opendata.newwestcity.ca/downloads/education/EDUCATION_LANGUAGE_AND_LITERACY.json";
+    private String service_url = "http://opendata.newwestcity.ca/downloads/bus-stops/BUS_STOPS.json";
     private ListView lv;
     private ArrayAdapter<String> arrayAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education);
+        setContentView(R.layout.activity_bus_stop);
 
-        lv = (ListView) findViewById(R.id.education_list);
-        educationList = new ArrayList<>();
-        name = new ArrayList<>();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        lv = (ListView) findViewById(R.id.stopList);
+        stopList = new ArrayList<>();
+        stopNumber = new ArrayList<>();
 
-        new EducationAsyncTask().execute();
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        new StopAsyncTask().execute();
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String educationName =  ((TextView)view).getText().toString();
-                Education educationDetail = null;
-                for (int j = 0; j < educationList.size(); j++) {
-                    if(educationList.get(j).getName().equalsIgnoreCase(educationName)) {
-                        educationDetail = educationList.get(j);
+                String stopNumber =  ((TextView)view).getText().toString();
+                BusStop stopDetail = null;
+                for (int j = 0; j < stopList.size(); j++) {
+                    if(Integer.toString(stopList.get(j).getStopNum()).equalsIgnoreCase(stopNumber)) {
+                        stopDetail = stopList.get(j);
                         break;
                     }
                 }
                 if(i >= 0) {
-                    Intent intent = new Intent(EducationActivity.this, EducationDetailActivity.class);
-                    intent.putExtra("detail", educationDetail);
+                    Intent intent = new Intent(BusStopActivity.this, BusStopDetailActivity.class);
+                    intent.putExtra("detail", stopDetail);
                     startActivity(intent);
                 }
 
@@ -69,15 +64,15 @@ public class EducationActivity extends AppCompatActivity implements Serializable
     /**
      * Async task class to get json by making HTTP call
      */
-    private class EducationAsyncTask extends AsyncTask<Void, Void, Void> {
+    private class StopAsyncTask extends AsyncTask<Void, Void, Void> {
 
-        private static final String TAG = "EducationActivity";
+        private static final String TAG = "BusStopActivity";
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             // Showing progress dialog
-            pDialog = new ProgressDialog(EducationActivity.this);
+            pDialog = new ProgressDialog(BusStopActivity.this);
             pDialog.setMessage("Getting data");
             pDialog.setCancelable(false);
             pDialog.show();
@@ -101,22 +96,17 @@ public class EducationActivity extends AppCompatActivity implements Serializable
                     // looping through All Contacts
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject o = jsonArray.getJSONObject(i);
-                        JSONObject geo = o.getJSONObject("json_geometry");
-                        JSONArray coordinate = geo.getJSONArray("coordinates");
-                        Education education = new Education();
-                        name.add(o.getString("Name"));
-                        education.setName(o.getString("Name"));
-                        education.setDescription(o.getString("Description"));
-                        education.setCategory(o.getString("Category"));
-                        education.setHours(o.getString("Hours"));
-                        education.setLocation(o.getString("Location"));
-                        education.setPhoneNumber(o.getString("Phone"));
-                        education.setEmail(o.getString("Email"));
-                        education.setWebsite(o.getString("Website"));
-                        education.setLongitude(coordinate.getDouble(0));
-                        education.setLatitude(coordinate.getDouble(1));
-                        education.setPostalCode(o.getString("PC"));
-                        educationList.add(education);
+                        BusStop stop = new BusStop();
+                        stopNumber.add(Integer.toString(o.getInt("BUSSTOPNUM")));
+                        stop.setStopNum(o.getInt("BUSSTOPNUM"));
+                        stop.setOnStreet(o.getString("ONSTREET"));
+                        stop.setAtStreet(o.getString("ATSTREET"));
+                        stop.setPosition(o.getString("POSITION"));
+                        stop.setDirection(o.getString("DIRECTION"));
+                        stop.setStatus(o.getString("STATUS"));
+                        stop.setLongitude(Double.parseDouble(o.getString("X")));
+                        stop.setLatitude(Double.parseDouble(o.getString("Y")));
+                        stopList.add(stop);
                     }
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());
@@ -155,7 +145,7 @@ public class EducationActivity extends AppCompatActivity implements Serializable
 
             // Attach the adapter to a ListView
             arrayAdapter = new ArrayAdapter<String>(
-                    EducationActivity.this, android.R.layout.simple_list_item_1, name
+                    BusStopActivity.this, android.R.layout.simple_list_item_1, stopNumber
             );
             lv.setAdapter(arrayAdapter);
         }

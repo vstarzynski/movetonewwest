@@ -15,6 +15,13 @@
     <string name="phone">Phone: </string>
     <string name="email">Email: </string>
     <string name="website">Website: </string>
+    <string name="summary">Summary: </string>
     <string name="title_activity_maps">Map</string>
-
+    <string name="title_activity_sports_detail">SportsDetailActivity</string>
+    <string name="activities">Activities: </string>
+    <string name="status">Status: </string>
+    <string name="onStreet">OnStreet: </string>
+    <string name="atStreet">AtStreet: </string>
+    <string name="position">Position: </string>
+    <string name="direction">Direction: </string>
 </resources>

@@ -1,7 +1,6 @@
 package com.example.vnstarzynski.movingtonewwest;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -18,47 +17,44 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class EducationActivity extends AppCompatActivity implements Serializable {
-    private List<Education> educationList;
+public class EventActivity extends AppCompatActivity implements Serializable {
+    private List<Event> eventList;
     private List<String> name;
     private ProgressDialog pDialog;
-    private String service_url = "http://opendata.newwestcity.ca/downloads/education/EDUCATION_LANGUAGE_AND_LITERACY.json";
+    private String service_url = "http://opendata.newwestcity.ca/downloads/cultural-events/EVENTS.json";
     private ListView lv;
     private ArrayAdapter<String> arrayAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education);
+        setContentView(R.layout.activity_event);
 
-        lv = (ListView) findViewById(R.id.education_list);
-        educationList = new ArrayList<>();
+        lv = (ListView) findViewById(R.id.event_list);
+        eventList = new ArrayList<>();
         name = new ArrayList<>();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        new EducationAsyncTask().execute();
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        new EventAsyncTask().execute();
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String educationName =  ((TextView)view).getText().toString();
-                Education educationDetail = null;
-                for (int j = 0; j < educationList.size(); j++) {
-                    if(educationList.get(j).getName().equalsIgnoreCase(educationName)) {
-                        educationDetail = educationList.get(j);
+                String eventName =  ((TextView)view).getText().toString();
+                Event eventDetail = null;
+                for (int j = 0; j < eventList.size(); j++) {
+                    if(eventList.get(j).getName().equalsIgnoreCase(eventName)) {
+                        eventDetail = eventList.get(j);
                         break;
                     }
                 }
                 if(i >= 0) {
-                    Intent intent = new Intent(EducationActivity.this, EducationDetailActivity.class);
-                    intent.putExtra("detail", educationDetail);
+                    Intent intent = new Intent(EventActivity.this, EventDetailActivity.class);
+                    intent.putExtra("detail", eventDetail);
                     startActivity(intent);
                 }
 
@@ -69,15 +65,15 @@ public class EducationActivity extends AppCompatActivity implements Serializable
     /**
      * Async task class to get json by making HTTP call
      */
-    private class EducationAsyncTask extends AsyncTask<Void, Void, Void> {
+    private class EventAsyncTask extends AsyncTask<Void, Void, Void> {
 
-        private static final String TAG = "EducationActivity";
+        private static final String TAG = "EventActivity";
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             // Showing progress dialog
-            pDialog = new ProgressDialog(EducationActivity.this);
+            pDialog = new ProgressDialog(EventActivity.this);
             pDialog.setMessage("Getting data");
             pDialog.setCancelable(false);
             pDialog.show();
@@ -103,20 +99,19 @@ public class EducationActivity extends AppCompatActivity implements Serializable
                         JSONObject o = jsonArray.getJSONObject(i);
                         JSONObject geo = o.getJSONObject("json_geometry");
                         JSONArray coordinate = geo.getJSONArray("coordinates");
-                        Education education = new Education();
+                        Event event = new Event();
                         name.add(o.getString("Name"));
-                        education.setName(o.getString("Name"));
-                        education.setDescription(o.getString("Description"));
-                        education.setCategory(o.getString("Category"));
-                        education.setHours(o.getString("Hours"));
-                        education.setLocation(o.getString("Location"));
-                        education.setPhoneNumber(o.getString("Phone"));
-                        education.setEmail(o.getString("Email"));
-                        education.setWebsite(o.getString("Website"));
-                        education.setLongitude(coordinate.getDouble(0));
-                        education.setLatitude(coordinate.getDouble(1));
-                        education.setPostalCode(o.getString("PC"));
-                        educationList.add(education);
+                        event.setName(o.getString("Name"));
+                        event.setDescription(o.getString("Descriptn"));
+                        event.setSummary(o.getString("summary"));
+                        event.setLocation(o.getString("Address"));
+                        event.setPhoneNumber(o.getString("phone"));
+                        event.setEmail(o.getString("email"));
+                        event.setWebsite(o.getString("website"));
+                        event.setLongitude(coordinate.getDouble(0));
+                        event.setLatitude(coordinate.getDouble(1));
+                        event.setPostalCode(o.getString("pcode"));
+                        eventList.add(event);
                     }
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());
@@ -155,7 +150,7 @@ public class EducationActivity extends AppCompatActivity implements Serializable
 
             // Attach the adapter to a ListView
             arrayAdapter = new ArrayAdapter<String>(
-                    EducationActivity.this, android.R.layout.simple_list_item_1, name
+                    EventActivity.this, android.R.layout.simple_list_item_1, name
             );
             lv.setAdapter(arrayAdapter);
         }

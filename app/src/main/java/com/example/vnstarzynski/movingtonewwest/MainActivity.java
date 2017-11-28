@@ -3,7 +3,6 @@ package com.example.vnstarzynski.movingtonewwest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -82,26 +81,23 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.education) {
-            Intent educationIntent = new Intent(this, EducationActivity.class);
-            startActivity(educationIntent);
+            Intent intent = new Intent(this, EducationActivity.class);
+            startActivity(intent);
         } else if (id == R.id.transport) {
-            Intent educationIntent = new Intent(this, TransportActivity.class);
-            startActivity(educationIntent);
-        } else if (id == R.id.parks) {
-            Intent educationIntent = new Intent(this, ParksActivity.class);
-            startActivity(educationIntent);
+            Intent intent = new Intent(this, BusStopActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.shop) {
+            Intent intent = new Intent(this, ShopActivity.class);
+            startActivity(intent);
         } else if (id == R.id.sports) {
-            Intent educationIntent = new Intent(this, SportsActivity.class);
-            startActivity(educationIntent);
-        } else if (id == R.id.bike_routes) {
-            Intent educationIntent = new Intent(this, BikeRoutesActivity.class);
-            startActivity(educationIntent);
+            Intent intent = new Intent(this, SportsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.events) {
-            Intent educationIntent = new Intent(this, EventsActivity.class);
-            startActivity(educationIntent);
+            Intent intent = new Intent(this, EventActivity.class);
+            startActivity(intent);
         } else if (id == R.id.favourites) {
-            Intent favouriteIntent = new Intent(this, FavouriteActivity.class);
-            startActivity(favouriteIntent);
+            Intent intent = new Intent(this, FavouriteActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

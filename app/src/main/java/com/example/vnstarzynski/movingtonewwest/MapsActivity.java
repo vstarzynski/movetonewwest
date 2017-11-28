@@ -15,7 +15,9 @@ import java.io.Serializable;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Serializable {
 
     private GoogleMap mMap;
-    private Education education;
+    private double longitude;
+    private double latitude;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        education = (Education) getIntent().getExtras().get("education");
+        longitude = (double) getIntent().getExtras().get("longitude");
+        latitude = (double) getIntent().getExtras().get("latitude");
+        name = (String) getIntent().getExtras().get("name");
     }
 
 
@@ -44,8 +48,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng location = new LatLng(education.getLatitude(), education.getLongitude());
-        mMap.addMarker(new MarkerOptions().position(location).title(education.getName()));
+        LatLng location = new LatLng(latitude, longitude);
+        mMap.addMarker(new MarkerOptions().position(location).title(name));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 15.0f));
     }
 }

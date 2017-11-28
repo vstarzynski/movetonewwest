@@ -13,19 +13,14 @@
             android:title="Transport" />
 
         <item
-            android:id="@+id/parks"
+            android:id="@+id/shop"
             android:icon="@drawable/parks_icon"
-            android:title="Parks" />
+            android:title="Shops" />
 
         <item
             android:id="@+id/sports"
             android:icon="@drawable/sports_icon"
             android:title="Sports" />
-
-        <item
-            android:id="@+id/bike_routes"
-            android:icon="@drawable/bike_icon"
-            android:title="Bike Routes" />
 
         <item
             android:id="@+id/events"
