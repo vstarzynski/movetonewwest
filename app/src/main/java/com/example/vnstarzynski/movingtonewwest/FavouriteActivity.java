@@ -15,6 +15,8 @@ public class FavouriteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourite);
 
+        getSupportActionBar().setTitle("Favorites");
+
         ListView lv = (ListView) findViewById(R.id.favourite_list);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(

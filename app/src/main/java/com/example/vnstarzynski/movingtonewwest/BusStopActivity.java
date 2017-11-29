@@ -37,6 +37,7 @@ public class BusStopActivity extends AppCompatActivity {
         stopNumber = new ArrayList<>();
 
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setTitle("Bus Stops");
 
         new StopAsyncTask().execute();
 

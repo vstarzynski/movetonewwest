@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovingToNewWest</string>
+    <string name="app_name">New Home New West</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -16,7 +16,7 @@
     <string name="email">Email: </string>
     <string name="website">Website: </string>
     <string name="summary">Summary: </string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">Show on Map</string>
     <string name="title_activity_sports_detail">SportsDetailActivity</string>
     <string name="activities">Activities: </string>
     <string name="status">Status: </string>

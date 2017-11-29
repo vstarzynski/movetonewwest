@@ -21,6 +21,8 @@ public class SportsDetailActivity extends AppCompatActivity implements Serializa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports_detail);
 
+        getSupportActionBar().setTitle("Sports");
+
         final SportsField field = (SportsField) getIntent().getExtras().get("detail");
         TextView name = (TextView) findViewById(R.id.parkName);
         name.setText(field.getParkName());

@@ -22,6 +22,9 @@ public class EducationDetailActivity extends AppCompatActivity {
         TextView name = (TextView) findViewById(R.id.educationName);
         name.setText(education.getName());
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Education");
+
         TextView description = (TextView) findViewById(R.id.description);
         description.setText(education.getDescription());
 

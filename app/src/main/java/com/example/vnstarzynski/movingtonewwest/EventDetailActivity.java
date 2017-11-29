@@ -23,6 +23,8 @@ public class EventDetailActivity extends AppCompatActivity implements Serializab
         TextView name = (TextView) findViewById(R.id.eventName);
         name.setText(event.getName());
 
+        getSupportActionBar().setTitle("Events");
+
         TextView description = (TextView) findViewById(R.id.description_event);
         description.setText(event.getDescription());
 

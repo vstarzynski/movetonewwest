@@ -38,6 +38,7 @@ public class EventActivity extends AppCompatActivity implements Serializable {
         name = new ArrayList<>();
 
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setTitle("Events");
 
         new EventAsyncTask().execute();
 

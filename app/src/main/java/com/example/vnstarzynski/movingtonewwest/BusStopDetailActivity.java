@@ -20,6 +20,8 @@ public class BusStopDetailActivity extends AppCompatActivity {
         TextView stopNum = (TextView) findViewById(R.id.busStopNumber);
         stopNum.setText(Integer.toString(stop.getStopNum()));
 
+        getSupportActionBar().setTitle("Bus Stops");
+
         TextView onStreet = (TextView) findViewById(R.id.onStreet);
         onStreet.setText(stop.getOnStreet());
 

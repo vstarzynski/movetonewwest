@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.vnstarzynski.movingtonewwest.BusStopDetailActivity">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,6 +20,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"/>
@@ -27,10 +29,12 @@
                 android:id="@+id/onStreetHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/onStreet"
-                android:layout_below="@+id/busStopNumber"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="13dp" />
+                android:layout_below="@+id/busStopNumber"
+                android:layout_marginTop="13dp"
+                android:text="@string/onStreet"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/onStreet"
@@ -45,10 +49,12 @@
                 android:id="@+id/atStreetHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/onStreet"
                 android:layout_marginTop="5dp"
                 android:text="@string/atStreet"
-                android:layout_below="@+id/onStreet"
-                android:layout_alignParentStart="true" />
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/atStreet"
@@ -63,10 +69,12 @@
                 android:id="@+id/directionHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/atStreet"
-                android:text="@string/direction" />
+                android:layout_marginTop="5dp"
+                android:text="@string/direction"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/direction"
@@ -81,10 +89,12 @@
                 android:id="@+id/positionHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/position"
-                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/direction"
-                android:layout_alignParentStart="true" />
+                android:layout_marginTop="5dp"
+                android:text="@string/position"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/position"
@@ -99,10 +109,12 @@
                 android:id="@+id/statusHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/status"
-                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/position"
-                android:layout_alignParentStart="true" />
+                android:layout_marginTop="5dp"
+                android:text="@string/status"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/status"
@@ -115,12 +127,15 @@
 
             <Button
                 android:id="@+id/map_stop"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_activity_maps"
                 android:layout_above="@+id/favourite"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="50dp" />
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/title_activity_maps"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 

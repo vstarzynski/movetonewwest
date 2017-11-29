@@ -42,6 +42,7 @@ public class EducationActivity extends AppCompatActivity implements Serializable
         educationList = new ArrayList<>();
         name = new ArrayList<>();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Education");
 
         new EducationAsyncTask().execute();
 

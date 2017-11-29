@@ -34,31 +34,40 @@
             android:name=".EducationActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".TransportActivity"
+            android:name=".BusStopActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ParksActivity"
+            android:name=".ShopActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SportsActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".BikeRoutesActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".EventActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".EducationDetailActivity" />
-        <activity android:name=".FavouriteActivity" />
-        <activity android:name=".EventDetailActivity" />
+        <activity
+            android:name=".EducationDetailActivity"
+            android:parentActivityName=".EducationActivity" />
+
+        <activity
+            android:name=".FavouriteActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".EventDetailActivity"
+            android:parentActivityName=".EventActivity" />
+
         <activity
             android:name=".SportsDetailActivity"
-            android:label="@string/title_activity_sports_detail"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ShopActivity" />
-        <activity android:name=".ShopDetailActivity" />
-        <activity android:name=".BusStopActivity" />
-        <activity android:name=".BusStopDetailActivity"></activity>
+            android:parentActivityName=".SportsActivity" />
+
+        <activity
+            android:name=".ShopDetailActivity"
+            android:parentActivityName=".ShopActivity" />
+
+        <activity
+            android:name=".BusStopDetailActivity"
+            android:parentActivityName=".BusStopActivity" />
     </application>
 
 </manifest>

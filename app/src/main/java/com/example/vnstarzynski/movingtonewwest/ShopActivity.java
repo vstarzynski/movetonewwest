@@ -33,6 +33,7 @@ public class ShopActivity extends AppCompatActivity implements Serializable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+        getSupportActionBar().setTitle("Shop");
 
         lv = (ListView) findViewById(R.id.shopList);
         shopList = new ArrayList<>();

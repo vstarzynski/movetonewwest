@@ -16,6 +16,8 @@ public class ShopDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_detail);
 
+
+        getSupportActionBar().setTitle("Shop");
         final Shop shop = (Shop) getIntent().getExtras().get("detail");
         TextView name = (TextView) findViewById(R.id.buildingName);
         name.setText(shop.getBuildingName());

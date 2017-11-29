@@ -39,6 +39,7 @@ public class SportsActivity extends AppCompatActivity implements Serializable {
         name = new ArrayList<>();
 
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setTitle("Sports");
 
         new SportsAsyncTask().execute();
 
